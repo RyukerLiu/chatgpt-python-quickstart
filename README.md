@@ -11,7 +11,7 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
 3. Navigate into the project directory
 
    ```bash
-   $ cd openai-quickstart-python
+   $ cd chatgpt-python-quickstart
    ```
 
 4. Create a new virtual environment
@@ -42,3 +42,13 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
    ```
 
 You should now be able to access the app at [http://localhost:5000](http://localhost:5000)! For the full context behind this example app, check out the [tutorial](https://beta.openai.com/docs/quickstart).
+
+
+## 疑難排解
+
+Mac 的 5000 Port 有可能被 AirPlay Receiver, 如果是這樣，可以嘗試開在別的 Port
+
+``` bash
+$ flask run --port=8000
+```
+Then go to http://127.0.0.1:8000
